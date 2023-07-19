@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:whatsapp/colors.dart';
 import 'package:whatsapp/widget/contact.dart';
 
-class Webscreen extends StatelessWidget {
-  const Webscreen({super.key});
+class Mobilescreen extends StatelessWidget {
+  const Mobilescreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -61,6 +61,14 @@ class Webscreen extends StatelessWidget {
             ),
           ),
           body: Contact(),
+          floatingActionButton: FloatingActionButton(
+            onPressed: () {},
+            backgroundColor: tabColor,
+            child: Icon(
+              Icons.comment,
+              color: Colors.white,
+            ),
+          ),
         ));
   }
 }
